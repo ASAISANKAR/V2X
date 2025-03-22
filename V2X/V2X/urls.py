@@ -22,4 +22,6 @@ from .views import *
 urlpatterns = [
     path("admin/", admin.site.urls),
      path('', home),
+     path('add/', add_title, name='add_title'),
+    path('view/', view_titles, name='view_titles'),
 ]

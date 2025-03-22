@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Title</title>
+</head>
+<body>
+    <h2>Add a New Title</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <a href="{% url 'view_titles' %}">View All Titles</a>
+</body>
+</html>

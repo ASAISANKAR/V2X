@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Titles List</title>
+</head>
+<body>
+    <h2>All Titles</h2>
+    <ul>
+        {% for title in titles %}
+            <li>{{ title.name }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="{% url 'add_title' %}">Add New Title</a>
+</body>
+</html>
